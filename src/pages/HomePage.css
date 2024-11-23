@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Apple-like font */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Homepage Container */
+.homepage-container {
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding */
+}
+
+/* Sticky Welcome Section */
+.welcome-section {
+  padding: 40px; 
+  background-color: white; /* White background for contrast */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-bottom: 40px; /* Space below the section */
+  display: flex; /* Flex layout for responsiveness */
+  justify-content: space-between; /* Space elements evenly */
+  align-items: center; /* Center items vertically */
+  
+}
+
+.text-content {
+  max-width: 50%; /* Control text width */
+  text-align: left; /* Left-align for readability */
+}
+
+.text-content h1 {
+  color: #343a40; /* Dark text */
+  font-size: 2.5rem; 
+  margin: 0.5em 0; 
+}
+
+.text-content h2 {
+  color: #007bff; /* Accent color for subheading */
+  font-size: 1.8rem; 
+  margin: 0.5em 0; 
+}
+
+.button-container {
+  margin-top: 20px; 
+}
+
+/* Image Styling */
+.image-content img {
+  border-radius: 15px; /* Rounded corners for images */
+  max-width: 100%; 
+  height: auto; 
+}
+
+/* Section Styling */
+.about-us-section,
+.services-section,
+.why-choose-us-section,
+.testimonials-section,
+.get-started-section,
+.contact-us-section {
+  padding: 40px; /* Add padding around sections */
+  background-color: white; /* White background for contrast */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-bottom: 40px; /* Space below the section */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 24px; /* Button padding */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 25px; /* Rounded button */
+  border: none; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Button text color */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column; /* Stack on smaller screens */
+    padding: 20px; 
+  }
+
+  .text-content h1 {
+    font-size: 2rem; 
+  }
+
+  .text-content h2 {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.5rem; 
+  }
+
+  .text-content h2 {
+    font-size: 1.2rem; 
+  }
+
+  .btn {
+    padding: 10px 20px; 
+    font-size: 14px; 
+  }
+}
+/* Fade-in Animation */
+.hidden {
+  opacity: 0; /* Hidden by default */
+  transform: translateY(20px); /* Move down slightly */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effect */
+}
+
+.fade-in {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}
+
+/* General Styles */
+.homepage-container {
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for overall spacing */
+}
+
+.welcome-section {
+  padding: 40px; /* Adjust padding as needed */
+  background-color: #f8f9fa; /* Background color */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  display: flex; /* Flex layout */
+  justify-content: space-between; /* Space items */
+  align-items: center; /* Center items */
+}
+
+.text-content {
+  max-width: 50%; /* Control text width */
+}
+
+.button-container {
+  margin-top: 20px; /* Space between text and button */
+  text-align: center; /* Center the button */
+}
+
+.btn {
+  padding: 12px 24px; /* Button padding */
+  font-size: 16px; /* Button font size */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Image Styling */
+.image-content img {
+  border-radius: 12px; /* Rounded corners for the image */
+  max-width: 100%; /* Responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.img-fluid {
+  width: 100%; /* Full width for smaller screens */
+  max-width: 300px; /* Limit maximum width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover without distortion */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .img-fluid {
+    width: 700px; /* Fixed width for larger screens */
+    height: 300px; /* Fixed height */
+  }
+}

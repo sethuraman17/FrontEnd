@@ -1,0 +1,21 @@
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color:white
+}
+
+.pdf-document {
+    width: 100%;
+    max-width: 800px;
+}
+
+.pdf-page {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}

@@ -1,0 +1,210 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+.main-content {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Styles */
+.App-footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 2rem 0;
+  border-top: 3px solid #007bff;
+}
+
+.App-footer h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.App-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.App-footer a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.contact-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-left li {
+  margin-bottom: 0.75rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-right iframe {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left, .contact-center, .contact-right {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+/* App.css */
+
+/* Custom dropdown background color and border */
+.dropdown-menu {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #007bff; /* Blue border */
+}
+
+/* Change text color for dropdown items */
+.dropdown-item {
+  color: #333; /* Dark text color */
+}
+
+/* Change the hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Style for the dropdown toggle link */
+.dropdown-toggle {
+  color: #007bff; /* Blue text */
+}
+
+/* Change the hover effect for the dropdown toggle link */
+.dropdown-toggle:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+/* Custom dropdown styles */
+.dropdown-custom {
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 0.5rem; /* Padding for dropdown */
+}
+
+.dropdown-custom .dropdown-item {
+  padding: 0.75rem 1.5rem; /* Padding for items */
+  color: #333; /* Item text color */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.dropdown-custom .dropdown-item:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+
+.dropdown-custom .dropdown-item:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Focus effect */
+}
+
+/* Optional: Styling for dropdown toggle */
+.navbar .dropdown-toggle {
+  font-weight: bold; /* Make the toggle text bold */
+  color: #007bff; /* Customize toggle color */
+}
+
+.navbar .dropdown-toggle:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
