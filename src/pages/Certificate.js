@@ -4,10 +4,14 @@ const Services = () => {
     return (
         <div className="certificate-container">
             <img 
+   
                 src={img1} 
-                alt={'loading...'} 
+                alt="loading..." 
                 className="full-screen-image" 
+                style={{ width: "60%" }}
             />
+            
+        
         </div>
     );
 }
