@@ -126,8 +126,8 @@ function ContactUs() {
             <h4>
               <FaMapMarkerAlt /> Location
             </h4>
-            <p>1234 Main Street,</p>
-            <p>Viralimalai, Tamil Nadu, India</p>
+            <p>199/1, Ambal Nagar, Boothakudi Village</p>
+            <p>,Pudukkottai-621316, Viralimalai, Tamil Nadu, India</p>
 
             <h4>
               <FaPhone /> Reach Us

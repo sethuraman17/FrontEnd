@@ -136,7 +136,7 @@ const Welcome = () => {
         <h4>Contact Us</h4>
         <p>Phone: +91 98765 43210</p>
         <p>Email: info@sriramcoaters.com</p>
-        <p>Address: 1234 Main Street,Viralimalai, Tamil Nadu, India</p>
+        <p>Address: 199/1, Ambal Nagar, Boothakudi Village, Viralimalai, Viralimalai, Pudukkottai-621316, Tamil Nadu, India</p>
       </div>
     </div>
   );
