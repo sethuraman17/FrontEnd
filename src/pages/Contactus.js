@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contactus.css";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-
+import emailjs from 'emailjs-com';
 function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,13 +17,18 @@ function ContactUs() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate an API call
-    setTimeout(() => {
+    // EmailJS service
+    emailjs.send(
+      "service_mqq6fu9",
+     "template_9zrok6w",
+      formData,
+      "DMlyjUW-Z7AalN8HT"
+    )
+    .then((response) => {
       setLoading(false);
       setMessage("Your message has been sent successfully!");
       setFormData({
@@ -33,7 +38,12 @@ function ContactUs() {
         subject: "",
         requirement: "",
       });
-    }, 2000);
+    })
+    .catch((error) => {
+      setLoading(false);
+      setMessage("Failed to send message. Please try again.");
+      console.error("EmailJS error:", error);
+    });
   };
 
   return (
@@ -126,19 +136,19 @@ function ContactUs() {
             <h4>
               <FaMapMarkerAlt /> Location
             </h4>
-            <p>1234 Main Street,</p>
-            <p>Viralimalai, Tamil Nadu, India</p>
-
+            <p>199/1, Ambal Nagar, Boothakudi Village,</p>
+            <p> Pudukkottai,621316, Viralimalai,</p>
+            <p>Tamil Nadu, India</p>
             <h4>
               <FaPhone /> Reach Us
             </h4>
             <p>Sethuraman</p>
-            <p>+91 98765 43210</p>
+            <p>+91 86675 62719</p>
 
             <h4>
               <FaEnvelope /> Email Us
             </h4>
-            <p>info@sriramcoaters.com</p>
+            <p>info@sriram-coaters.in</p>
           </div>
         </div>
       </div>

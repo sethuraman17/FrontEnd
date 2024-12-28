@@ -134,8 +134,8 @@ const Welcome = () => {
       {/* Contact Us Section */}
       <div className={`contact-us-section ${inViewGetStarted ? 'fade-in' : 'hidden'}`} ref={refGetStarted}>
         <h4>Contact Us</h4>
-        <p>Phone: +91 98765 43210</p>
-        <p>Email: info@sriramcoaters.com</p>
+        <p>Phone: +91 86675 62719</p>
+        <p>Email: info@sriram-coaters.in</p>
         <p>Address: 199/1, Ambal Nagar, Boothakudi Village, Viralimalai, Viralimalai, Pudukkottai-621316, Tamil Nadu, India</p>
       </div>
     </div>

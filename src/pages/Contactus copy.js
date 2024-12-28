@@ -133,7 +133,7 @@ function ContactUs() {
               <FaPhone /> Reach Us
             </h4>
             <p>Sethuraman</p>
-            <p>+91 98765 43210</p>
+            <p>+91 86675 62719</p>
 
             <h4>
               <FaEnvelope /> Email Us
